@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://murphytsai.github.com/atom.xml" rel="self"/>
   <link href="http://murphytsai.github.com/"/>
-  <updated>2013-03-28T17:56:23+08:00</updated>
+  <updated>2013-03-28T18:22:54+08:00</updated>
   <id>http://murphytsai.github.com/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -14,11 +14,35 @@
 
   
   <entry>
-    <title type="html"><![CDATA[First Article]]></title>
-    <link href="http://murphytsai.github.com/blog/2013/03/28/first-article/"/>
-    <updated>2013-03-28T17:41:00+08:00</updated>
-    <id>http://murphytsai.github.com/blog/2013/03/28/first-article</id>
-    <content type="html"><![CDATA[<h3>Just Test</h3>
+    <title type="html"><![CDATA[發佈 octopress 文章四部曲]]></title>
+    <link href="http://murphytsai.github.com/blog/2013/03/28/fa-bu-octopress-wen-zhang-san-bu-qu/"/>
+    <updated>2013-03-28T18:04:00+08:00</updated>
+    <id>http://murphytsai.github.com/blog/2013/03/28/fa-bu-octopress-wen-zhang-san-bu-qu</id>
+    <content type="html"><![CDATA[<ul>
+<li>$ rake new_post[&#8220;文章標題&#8221;]</li>
+</ul>
+
+
+<h4>撰寫文章內容</h4>
+
+<ul>
+<li>編輯 source/_posts/time-title.markdown</li>
+</ul>
+
+
+<h4>產生網頁相關資料</h4>
+
+<ul>
+<li>$ rake generate</li>
+</ul>
+
+
+<h4>發佈文章</h4>
+
+<ul>
+<li>$ rake deploy</li>
+</ul>
+
 ]]></content>
   </entry>
   
