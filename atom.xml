@@ -4,7 +4,7 @@
   <title><![CDATA[嗑博文]]></title>
   <link href="http://murphytsai.github.com/atom.xml" rel="self"/>
   <link href="http://murphytsai.github.com/"/>
-  <updated>2013-03-28T18:51:02+08:00</updated>
+  <updated>2013-03-29T10:04:23+08:00</updated>
   <id>http://murphytsai.github.com/</id>
   <author>
     <name><![CDATA[嗑博文]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[應用程式開發準則]]></title>
+    <link href="http://murphytsai.github.com/blog/2013/03/29/ying-yong-cheng-shi-kai-fa-zhun-ze/"/>
+    <updated>2013-03-29T09:56:00+08:00</updated>
+    <id>http://murphytsai.github.com/blog/2013/03/29/ying-yong-cheng-shi-kai-fa-zhun-ze</id>
+    <content type="html"><![CDATA[<h3>確切表述產品聲明(Product Statement) Application Definition Statement</h3>
+
+<blockquote><p>設計決策<br/><你的差異因素> <你的解決方案> 針對 <你的使用者></p></blockquote>
+
+
+<p>example:
+&lt;有效率且美觀排版> &lt; Google 閱讀器用戶端> &lt;具有審美觀的新聞讀者></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[發佈 octopress 文章四部曲]]></title>
