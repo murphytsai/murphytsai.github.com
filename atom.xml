@@ -4,7 +4,7 @@
   <title><![CDATA[嗑博文]]></title>
   <link href="http://murphytsai.github.com/atom.xml" rel="self"/>
   <link href="http://murphytsai.github.com/"/>
-  <updated>2013-03-29T10:04:23+08:00</updated>
+  <updated>2013-03-29T10:47:16+08:00</updated>
   <id>http://murphytsai.github.com/</id>
   <author>
     <name><![CDATA[嗑博文]]></name>
@@ -12,6 +12,56 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Objective-C Category]]></title>
+    <link href="http://murphytsai.github.com/blog/2013/03/29/objective-c-category/"/>
+    <updated>2013-03-29T10:25:00+08:00</updated>
+    <id>http://murphytsai.github.com/blog/2013/03/29/objective-c-category</id>
+    <content type="html"><![CDATA[<p>Objective-C 和其他語言如 Java , C++特性上其中一個最大的不同就是 Category.
+這樣的想法是來自於 Smalltalk 這個程式語言.</p>
+
+<p>在 Objective-C 裡允許你添增新的 method，即使你手頭上沒有原先類別的程式碼。
+Category 的定義和 Class 類似，但是它不能修改 Class 中的實例變數，即使是它的父類別也不行。
+要注意的是 Category 的介面和實作都是 Optional的。</p>
+
+<p>另一個須注意的是 宣告在 Category 中的 method 名稱若是與原本 Class 中的 method 有相同(衝突)，
+那麼 Category 中的 method 將會優先被使用而取代原先的。</p>
+
+<p>若有兩個 Category 中的 method 重覆了呢？那一個會被使用是沒有定義的(自求多福) !</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="c1">//example : 在 NSObject 中新增 Category</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">@interface</span> <span class="nc">NSObject</span><span class="nl">(MyAddedCategory)</span>
+</span><span class='line'><span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="nf">addedMethod</span><span class="p">;</span>
+</span><span class='line'><span class="k">@end</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="k">@implementation</span> <span class="nc">NSObject</span><span class="nl">(MyAddedCategory)</span>
+</span><span class='line'><span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="nf">addedMethod</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>  <span class="n">NSLog</span><span class="p">(</span><span class="s">@&quot;This new added method for extending NSObject function.&quot;</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="k">@end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[應用程式開發準則]]></title>
